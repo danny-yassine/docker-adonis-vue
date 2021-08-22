@@ -12,8 +12,8 @@ Simple skeleton in order to quickly start a new project with the following techn
 <table>
   <tr>
     <td valign="top">
-<div style="width: 150px; height: 75px;">
-        <img width="150" height="75" src="https://adonisjs.com/icons/apple-touch-icon.png">
+<div style="width: 75px; height: 75px;">
+        <img width="75" height="75" src="https://adonisjs.com/icons/apple-touch-icon.png">
     </div>
 </td>
     <td valign="top">
