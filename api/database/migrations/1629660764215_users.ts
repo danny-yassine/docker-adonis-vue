@@ -1,5 +1,4 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
-import User from 'App/Models/User';
 
 export default class Users extends BaseSchema {
   protected tableName = 'users'
