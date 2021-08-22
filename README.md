@@ -2,9 +2,9 @@
 
 Simple skeleton in order to quickly start a new project with the following technologies:
 
-* adonis.js (swoole)
-* vue
-* mysql/mariadb
+* [adonis.js](https://adonisjs.com/)
+* [vue](https://vuejs.org/)
+* [mysql](https://www.mysql.com/)/[mariadb](https://mariadb.org/)
 
 <br>
 <br>
