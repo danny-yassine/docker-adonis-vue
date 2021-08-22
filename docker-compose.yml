@@ -4,9 +4,9 @@ networks:
   adonis:
 
 services:
-  mysql:
-    image: mysql:latest
-    container_name: docker-adonis-mysql
+  db:
+    image: mariadb:latest
+    container_name: docker-adonis-db
     restart: unless-stopped
     tty: true
     ports:
@@ -15,7 +15,7 @@ services:
       MYSQL_DATABASE: docker-adonis
       MYSQL_ROOT_PASSWORD: secret
       SERVICE_TAGS: dev
-      SERVICE_NAME: mysql
+      SERVICE_NAME: mariadb
     networks:
       - adonis
 
@@ -34,7 +34,7 @@ services:
     networks:
       - adonis
     links:
-      - mysql
+      - db
 
   client:
     container_name: docker-adonis-client
