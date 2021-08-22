@@ -21,7 +21,7 @@ api-ssh:
 client-ssh:
 	docker exec -it docker-adonis-api /bin/bash
 migrate:
-	docker exec -it docker-adonis-api api artisan migrate
+	docker exec -it docker-adonis-api node ace migration:run --force
 setup:
 	make build
 	make dev-daemon

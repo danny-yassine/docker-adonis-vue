@@ -13,7 +13,7 @@ Simple skeleton in order to quickly start a new project with the following techn
   <tr>
     <td valign="top">
 <div style="width: 150px; height: 75px;">
-        <img width="150" height="75" src="https://laravel.com/img/logomark.min.svg">
+        <img width="150" height="75" src="https://adonisjs.com/icons/apple-touch-icon.png">
     </div>
 </td>
     <td valign="top">
@@ -58,17 +58,6 @@ make dev
 
 ```bash
 make migrate
-```
-
-## PhpUnit on VsCode
-
-#### Update settings.json
-
-update the key in `better-phpunit.docker.paths` to the local path of this project on your machine.
-```json
-"better-phpunit.docker.paths": {
-     "<project_path_on_your_computer>/api": "/usr/src/api"
-},
 ```
 
 ## Deploying to heroku
