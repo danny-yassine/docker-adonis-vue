@@ -12,5 +12,3 @@ RUN yarn
 # RUN npm ci --production
 
 RUN node ace build --production
-
-RUN yarn start:prod
