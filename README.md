@@ -79,6 +79,8 @@ heroku stack:set container --app <app-name>
 * Add a config var for `APP_KEY`
 * Deploy with branch
 
+* You will need to map all env vars from the heroku dashboard manually to the `build/.env` file in the dockerfile or pre-deploy scripts
+
 #### Under a paid plan
 
 * for zero downtime, set [preboot](https://devcenter.heroku.com/articles/preboot):
