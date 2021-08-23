@@ -13,4 +13,4 @@ RUN yarn
 
 RUN node ace build --production
 
-RUN cd build ; node server.js
+RUN cd build ; ENV_SILENT=true node server.js
