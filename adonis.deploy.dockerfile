@@ -13,4 +13,4 @@ RUN yarn
 
 RUN node ace build --production
 
-RUN ENV_SILENT=true HOST=0.0.0.0 node build/server.js
+RUN yarn start:prod
