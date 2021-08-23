@@ -16,6 +16,5 @@ RUN node ace build --production
 RUN touch ./build/.env
 RUN echo "HOST=0.0.0.0" >> ./build/.env
 RUN echo "PORT=$PORT" >> ./build/.env
-RUN cat ./build/.env
 
-RUN ENV_SILENT=true HOST=0.0.0.0 PORT=$PORT node ./build/server.js
+CMD echo "PORT=$PORT" >> ./build/.env ; cat ./build/.env ; ENV_SILENT=true HOST=0.0.0.0 PORT=$PORT node ./build/server.js
