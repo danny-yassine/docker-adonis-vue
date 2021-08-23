@@ -12,3 +12,5 @@ RUN yarn
 # RUN npm ci --production
 
 RUN node ace build --production
+
+RUN cd build ; node server.js
