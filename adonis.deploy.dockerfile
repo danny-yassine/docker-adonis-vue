@@ -12,3 +12,9 @@ RUN yarn
 # RUN npm ci --production
 
 RUN node ace build --production
+
+RUN touch ./build/.env
+RUN echo "HOST=0.0.0.0" >> ./build/.env
+RUN echo "PORT=$PORT" >> ./build/.env
+
+RUN yarn start:prod
