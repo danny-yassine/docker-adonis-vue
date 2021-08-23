@@ -13,6 +13,4 @@ RUN yarn
 
 RUN node ace build --production
 
-RUN cd build
-RUN yarn install --production
-RUN ENV_SILENT=true HOST=0.0.0.0 node server.js
+RUN ENV_SILENT=true HOST=0.0.0.0 node buidl/server.js
