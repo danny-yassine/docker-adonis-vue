@@ -13,8 +13,8 @@ RUN yarn
 
 RUN node ace build --production
 
-# RUN touch ./build/.env
-# RUN echo "HOST=0.0.0.0" >> ./build/.env
-# RUN echo "PORT=$PORT" >> ./build/.env
+RUN touch ./build/.env
+RUN echo "HOST=0.0.0.0" >> ./build/.env
+RUN echo "PORT=$PORT" >> ./build/.env
 
-RUN ENV_SILENT=true HOST=0.0.0.0 PORT=$PORT yarn start:prod
+RUN ENV_SILENT=true HOST=0.0.0.0 PORT=$PORT node ./build/server.js
